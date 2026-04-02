@@ -4,6 +4,12 @@ import logging
 import importlib
 from openclaw import ClawdBot, AnthropicProvider
 
+try:
+    import cmdop.exceptions
+    cmdop.exceptions.TimeoutError = TimeoutError
+except ImportError:
+    pass
+
 # Disaster Pattern Koruması 1: Katı Loglama. Hata olursa iz bırakmalı.
 logging.basicConfig(
     level=logging.INFO,
