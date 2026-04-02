@@ -1,5 +1,6 @@
-openclaw==2026.3.20
-py-clob-client==0.34.6
+openclaw==2026.3.12
+cmdop==2026.3.12
+py-clob-client==1.0.0
 websockets==12.0
 anthropic==0.20.0
 python-telegram-bot==21.0.1
